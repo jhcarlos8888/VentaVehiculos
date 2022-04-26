@@ -1,0 +1,69 @@
+package es.indra.principal.Logica;
+
+import es.indra.principal.Modelo.Carro;
+import es.indra.principal.Modelo.Moto;
+
+public class GestionVehiculo {
+	
+	//Se genera un constructor por defecto
+	public GestionVehiculo() {
+		
+	}
+	
+	
+	//Metodo para crear un objeto carro para agregar un nuevo carro recibiendo parametros de clase Carro
+	public Carro crearCarro(String placa, String marca, String modelo, String color, float precio, int numPuertas, int numValvulas) {
+		
+		
+		//Se crea un nuevo objeto llamado carro con los datos que le llegaron en los parametros del metodo crearCarro
+		Carro carro = new Carro(placa, marca, modelo, color, precio, numPuertas, numValvulas);
+		
+		
+		//aqui se puede enviar a guardar a BD
+		
+		//Me retorna o devuelve toda la informacion guardada en el objeto carro
+		return carro;
+	}
+	
+	
+	//Metodo para buscar un carro por medio de la placa
+	public Carro obtenerCarroByPlaca(String placa) {
+		
+		//este metodo deberia consultar el carro sobre la BD, pero como no se esta manejando, se simula
+		
+		//Esta linea simula una consulta de un carro, entonces cualquier placa a buscar 
+		//me retornada un carro con las caracteristicas especificadas
+		return new Carro(placa, "CHEVROLET", "2019", "GRIS", 38000000f, 4, 8);
+		
+	}
+	
+	
+	public Moto crearMoto(String placa, String marca, String modelo, String color, float precio, int cilindraje, String tipo) {
+		
+		Moto moto = new Moto(placa, marca, modelo, color, precio, cilindraje, tipo);
+		
+		//aqui se puede enviar a guardar a BD
+		
+		return moto;
+	}
+	
+	public Moto obtenerMotoByPlaca(String placa) {
+		
+		//este metodo deberia consultar la moto sobre la BD, pero como no se esta manejando, se simula
+		
+		return new Moto(placa, "SUSUKI", "2022", "NEGRA CON AZUL", 4500000f, 125, "URBANA");
+	}
+	
+	
+	public Carro traerListaCarros(Carro carro) {
+		
+		
+		return carro;
+		
+	}
+	
+	
+	
+
+}
+
