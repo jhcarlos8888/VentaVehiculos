@@ -18,6 +18,7 @@ public class Pool {
 	private static HikariDataSource ds;
 	
 
+	private static Pool instancia;
 	
 	
 	//Ahora se crea un constructor donde se iniciara un metodo llamado iniciarPool
@@ -27,7 +28,18 @@ public class Pool {
 		iniciarPool();
 	}
 	
-
+	
+	public static Pool getInstancia() {
+		
+		if(instancia == null)
+			instancia = new Pool();
+		
+		return instancia;
+	}
+	
+	//4873
+	
+	
 	
 	public static void iniciarPool() {
 

@@ -93,11 +93,12 @@ public class Conexion {
 	
 	
 	
-	//@SuppressWarnings("static-access")
 	
+	
+	@SuppressWarnings("static-access")
 	public void iniciarConexionPool() {
 		
-		this.con = Pool.getConexion();
+		this.con = Pool.getInstancia().getConexion();
 		
 	}
 	
