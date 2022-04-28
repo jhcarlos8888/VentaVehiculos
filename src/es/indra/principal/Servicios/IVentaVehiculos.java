@@ -24,6 +24,7 @@ public interface IVentaVehiculos {
 	//Consultar si una moto existe por medio de la placa
 	public Moto consultarMoto(String placa);
 	
+	
 	//Metodo para modificar el precio a un carro dentro de una base de datos
 	public Carro modificarPrecioAutomovil(String placa, float precio);
 	

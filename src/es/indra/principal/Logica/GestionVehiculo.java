@@ -4,6 +4,9 @@ import es.indra.principal.Modelo.Carro;
 import es.indra.principal.Modelo.Moto;
 import es.indra.principal.persistencia.dao.CarroDao;
 
+
+//Esta clase es la que interactua con los metodos de la clase que esta enlazada a la base de datos
+
 public class GestionVehiculo {
 	
 	//Se genera un constructor por defecto

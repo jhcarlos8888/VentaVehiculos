@@ -97,6 +97,7 @@ public class VentaVehiculosImpl implements IVentaVehiculos {
 		return null;
 	}
 
+	
 	@Override
 	public Moto consultarMoto(String placa) {
 		
